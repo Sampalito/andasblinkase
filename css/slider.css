@@ -1,0 +1,85 @@
+/*set the dimensions and positioning*/
+#home-slide-wrap, #home-slider, #home-slider .slide {
+    background: none repeat scroll 0 0 #E4E4E6;
+    height: 300px;
+    margin: auto;
+    position: relative;
+    width: 960px;
+    z-index: -2;
+}
+
+
+#home-slide-wrap #branding-start {
+    left: 29px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    width: 283px;
+    z-index: 111111;
+}
+
+
+/*
+The controls will sit below the slider
+We'll style the page anchors with a simple color background and hide the
+actual link text using overflow hidden and text-indent.
+*/
+#controls {
+    position: absolute;
+    right: -30px;
+    top: 144px;
+    width: 1021px;
+    z-index: 1000;
+}
+#pager {
+    height: 20px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    top: -24px;
+    width: 960px;
+    z-index: 9999;
+    
+}
+
+#pager a {
+    background: #fff;
+    cursor: pointer;
+    display: inline-block;
+    height: 9px;
+    margin-right: 4px;
+    overflow: hidden;
+    text-indent: -1000em;
+    width: 10px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-bottom: 0px;    
+}
+
+#pager a.activeSlide{
+    background-color:#2361A1;
+}
+
+
+#pre {
+    background: url("../images/btn-prev-slider.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 42px;
+    line-height: 10px;
+    text-indent: -9999px;
+    width: 21px;
+}
+#nex{
+		background: url("../images/btn-next-slider.png") no-repeat scroll 0 0 transparent;
+		cursor: pointer;
+		display: block;
+		float: right;
+		height: 42px;
+		line-height: 10px;
+		text-indent: -9999px;
+		width: 21px;
+}
+ 
